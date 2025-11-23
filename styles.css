@@ -615,6 +615,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .page-nav-menu {
+    justify-content: center;
+  }
+
+  .page-nav-link {
+    font-size: 0.8125rem;
+  }
+
   .thread-line {
     margin-left: calc(50% - 1px);
     height: 1rem;
@@ -636,7 +644,6 @@ body {
 
   .banner-card {
     padding: 1.5rem;
-    margin: 0 1rem;
     gap: 1rem;
   }
 
