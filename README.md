@@ -18,12 +18,13 @@ A modern, minimal personal website built with pure HTML, CSS, and JavaScript fea
 │   ├── footer.html     # Footer component
 │   └── nav.html        # Navigation component
 ├── assets/
+│   ├── css/
+│   │   └── styles.css  # Main stylesheet
 │   ├── js/
+│   │   ├── script.js      # Main JavaScript
 │   │   └── theme-init.js  # Theme initialization script
 │   ├── hardhat.svg     # Site favicon
 │   └── og-image.png    # Social sharing image
-├── script.js           # Main JavaScript
-├── styles.css          # Main stylesheet
 ├── sitemap.xml         # SEO sitemap
 ├── gulpfile.js         # Development server config
 ├── CNAME              # Custom domain configuration
@@ -105,7 +106,7 @@ This site can be deployed to any static hosting service:
 
 ### Styling
 
-The site uses CSS custom properties for theming. Key variables are defined in [styles.css](styles.css):
+The site uses CSS custom properties for theming. Key variables are defined in [assets/css/styles.css](assets/css/styles.css):
 
 ```css
 :root {
@@ -133,7 +134,7 @@ The site uses dynamic component loading via JavaScript. Components are HTML part
 <!-- Loaded from partials/banner.html -->
 ```
 
-See [script.js](script.js) for the component loading implementation.
+See [assets/js/script.js](assets/js/script.js) for the component loading implementation.
 
 ## Recent Updates
 
