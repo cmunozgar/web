@@ -61,31 +61,35 @@
           <div class="updates-list">
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 15, 2026</span>
+                <span class="update-date">Week 16, 2026</span>
               </div>
-              <h3 class="update-title">Publishing a new blog post and catching up on the website</h3>
+              <h3 class="update-title">Insights hits 100% beta rollout</h3>
               <p class="update-content">
-                A lighter week to close out the sprint — spent some time on non-code work, including publishing a new post on the Buffer Blog and updating this site for the first time in months.
+                A milestone week — Insights Overhaul is now live for all ~10k active beta users, alongside a CDN incident, a flurry of security patches, and the start of Instagram demographics ingestion.
               </p>
               <p class="update-content">
-                ✍️ New article out — wrote about how we discovered seven forgotten background jobs that had been running silently for five years during a routine infrastructure cleanup. Spoiler: one cost us around $600 over its lifetime.
+                🚀 Insights Overhaul in beta — after months of building, we rolled out to 100% of beta users. Shipped the final touches this week: date range selection persisted in URL query params, the Alpha badge replaced with Beta in the nav, and tag filtering on the All Channels view.
               </p>
               <p class="update-content">
-                🌐 Updated this site — added the new article, caught up on 14 weeks of missing updates, and generally tidied things up. Building in public means keeping the public part... public.
+                🚨 CDN incident — Buffer wasn't loading for some users. Diagnosed an ERR_QUIC_PROTOCOL_ERROR on our static assets CDN, traced it to a Cloudflare QUIC misconfiguration affecting EU and Eastern Americas. TCP fallback was working fine. Resolved within a few hours.
               </p>
               <p class="update-content">
-                🔍 Demographics research — audited Instagram, Pinterest, and LinkedIn APIs to map out what audience demographic data is available. A promising foundation for a future Demographics feature in Insights.
+                🔒 Security — patched multiple CVEs across buffer-scraper and buffer-customerio-webhook, including an axios SSRF bypass and lodash prototype pollution. Also contributed a lodash fix upstream to the metascraper open-source project.
+              </p>
+              <p class="update-content">
+                📊 Demographics next — started building Instagram demographics ingestion, the first step toward a Demographics feature in Insights.
               </p>
               <div class="update-tags">
-                <span class="update-tag">Writing</span>
                 <span class="update-tag">Insights</span>
-                <span class="update-tag">Infrastructure</span>
+                <span class="update-tag">Security</span>
+                <span class="update-tag">Incident Response</span>
+                <span class="update-tag">Analytics</span>
               </div>
             </article>
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 14, 2026</span>
+                <span class="update-date">Week 15, 2026</span>
               </div>
               <h3 class="update-title">Back with a bang — 20 PRs in four days</h3>
               <p class="update-content">
@@ -113,7 +117,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 13, 2026</span>
+                <span class="update-date">Week 14, 2026</span>
               </div>
               <h3 class="update-title">Taking a breather — Easter week in Barcelona</h3>
               <p class="update-content">
@@ -129,7 +133,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 12, 2026</span>
+                <span class="update-date">Week 13, 2026</span>
               </div>
               <h3 class="update-title">Pre-release bug blitz and a TikTok incident</h3>
               <p class="update-content">
@@ -153,7 +157,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 11, 2026</span>
+                <span class="update-date">Week 12, 2026</span>
               </div>
               <h3 class="update-title">On-call training, channel fixes, and a proactive DB alert</h3>
               <p class="update-content">
@@ -181,7 +185,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 10, 2026</span>
+                <span class="update-date">Week 11, 2026</span>
               </div>
               <h3 class="update-title">Insights nearing the finish line</h3>
               <p class="update-content">
@@ -205,7 +209,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 9, 2026</span>
+                <span class="update-date">Week 10, 2026</span>
               </div>
               <h3 class="update-title">Crystallizing the Insights roadmap</h3>
               <p class="update-content">
@@ -229,7 +233,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 8, 2026</span>
+                <span class="update-date">Week 9, 2026</span>
               </div>
               <h3 class="update-title">Customer feedback, adaptive scheduling architecture</h3>
               <p class="update-content">
@@ -253,7 +257,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 7, 2026</span>
+                <span class="update-date">Week 8, 2026</span>
               </div>
               <h3 class="update-title">Onboarding Bruno and deploying 8 channel workers to production</h3>
               <p class="update-content">
@@ -281,7 +285,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 6, 2026</span>
+                <span class="update-date">Week 7, 2026</span>
               </div>
               <h3 class="update-title">SNS infrastructure, channel analytics in production</h3>
               <p class="update-content">
@@ -305,7 +309,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 5, 2026</span>
+                <span class="update-date">Week 6, 2026</span>
               </div>
               <h3 class="update-title">Seven ingestion pipelines shipped and covering for a teammate</h3>
               <p class="update-content">
@@ -332,7 +336,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 4, 2026</span>
+                <span class="update-date">Week 5, 2026</span>
               </div>
               <h3 class="update-title">Pivoting to GraphQL and kicking off Insights</h3>
               <p class="update-content">
@@ -360,7 +364,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 3, 2026</span>
+                <span class="update-date">Week 4, 2026</span>
               </div>
               <h3 class="update-title">Building the analytics module and rolling out Instagram scopes</h3>
               <p class="update-content">
@@ -387,7 +391,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 2, 2026</span>
+                <span class="update-date">Week 3, 2026</span>
               </div>
               <h3 class="update-title">Instagram analytics deep-dive and incident response</h3>
               <p class="update-content">
@@ -411,7 +415,7 @@
 
             <article class="update-card">
               <div class="update-header">
-                <span class="update-date">Week 1, 2026</span>
+                <span class="update-date">Week 2, 2026</span>
               </div>
               <h3 class="update-title">Strong start — GA release and analytics pipeline kickoff</h3>
               <p class="update-content">
