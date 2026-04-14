@@ -61,6 +61,383 @@
           <div class="updates-list">
             <article class="update-card">
               <div class="update-header">
+                <span class="update-date">Week 15, 2026</span>
+              </div>
+              <h3 class="update-title">Publishing a new blog post and catching up on the website</h3>
+              <p class="update-content">
+                A lighter week to close out the sprint — spent some time on non-code work, including publishing a new post on the Buffer Blog and updating this site for the first time in months.
+              </p>
+              <p class="update-content">
+                ✍️ New article out — wrote about how we discovered seven forgotten background jobs that had been running silently for five years during a routine infrastructure cleanup. Spoiler: one cost us around $600 over its lifetime.
+              </p>
+              <p class="update-content">
+                🌐 Updated this site — added the new article, caught up on 14 weeks of missing updates, and generally tidied things up. Building in public means keeping the public part... public.
+              </p>
+              <p class="update-content">
+                🔍 Demographics research — audited Instagram, Pinterest, and LinkedIn APIs to map out what audience demographic data is available. A promising foundation for a future Demographics feature in Insights.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Writing</span>
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">Infrastructure</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 14, 2026</span>
+              </div>
+              <h3 class="update-title">Back with a bang — 20 PRs in four days</h3>
+              <p class="update-content">
+                First week back after Easter and it felt like someone flipped a switch. Four days, 20+ PRs merged, 16+ Linear issues resolved. The kind of week that reminds me why I love this job.
+              </p>
+              <p class="update-content">
+                📊 Insights feature blitz — shipped metric explanation popovers, chart export to composer, All Channels legend redesign, Takeaways decoupled from date filtering, and a proper empty state for when there's no data. Insights is getting really close to ready.
+              </p>
+              <p class="update-content">
+                🔐 SSM migration — migrated secrets from legacy parameter store to SSM as part of our infrastructure modernization effort. Two PRs, clean handoff.
+              </p>
+              <p class="update-content">
+                🐛 Bug fixes — resolved a tag report date range issue that had been reported before the holiday, and two security fixes in our customer.io webhook service.
+              </p>
+              <p class="update-content">
+                📖 Docs overhaul — rewrote channel analytics documentation from scratch: +336 lines added, 425 removed. Future Carlos (and Bruno) will thank me.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">Infrastructure</span>
+                <span class="update-tag">Bug Fixes</span>
+                <span class="update-tag">Security</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 13, 2026</span>
+              </div>
+              <h3 class="update-title">Taking a breather — Easter week in Barcelona</h3>
+              <p class="update-content">
+                Fully offline this week for Easter. Took the family to Barcelona — good food, good weather, and a much-needed reset after an intense few months of shipping.
+              </p>
+              <p class="update-content">
+                🇪🇸 Sometimes the most productive thing you can do is step away. Coming back refreshed and ready to close out the Insights release.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Time Off</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 12, 2026</span>
+              </div>
+              <h3 class="update-title">Pre-release bug blitz and a TikTok incident</h3>
+              <p class="update-content">
+                The week before Easter was all about clearing the runway for Insights — fixing the last batch of pre-release bugs while handling an unexpected TikTok production issue.
+              </p>
+              <p class="update-content">
+                🐛 Insights pre-release fixes — resolved five bugs across the date picker and post-actions routing. The kind of polish work that makes the difference between "it works" and "it feels right."
+              </p>
+              <p class="update-content">
+                🚨 TikTok incident — led response for a publishing rate drop we spotted in production. Traced it to error_code: 0 responses being incorrectly classified as failures. Diagnosed, fixed, and handed off to the west coast team before EOD.
+              </p>
+              <p class="update-content">
+                🤝 Bruno's 30-day mark — completed the role buddy reflection for Bruno's onboarding. He's ramped up fast and already contributing independently.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">Incident Response</span>
+                <span class="update-tag">Bug Fixes</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 11, 2026</span>
+              </div>
+              <h3 class="update-title">On-call training, channel fixes, and a proactive DB alert</h3>
+              <p class="update-content">
+                A week of broad impact — ran on-call training for Bruno, fixed a string of channel analytics auth errors, and caught a MongoDB connection issue before it became a problem.
+              </p>
+              <p class="update-content">
+                📟 On-call crash course — walked Bruno through PagerDuty, incident.io, and Kubernetes debugging. Covering the real stuff: how to read alerts, triage incidents, and stay calm under pressure.
+              </p>
+              <p class="update-content">
+                🔧 Channel analytics fixes — resolved auth errors across Pinterest, YouTube, and Bluesky workers; enabled Mastodon metrics and backfilling; completed Pinterest cron backfill. Seven Linear issues closed in a single day.
+              </p>
+              <p class="update-content">
+                🚨 LinkedIn incident — API timeouts were crashing workers. Merged a fix and bumped backfill worker memory from 300MB to 500MB to handle the load.
+              </p>
+              <p class="update-content">
+                🗄️ Proactive DB alert — noticed MongoDB connection counts creeping up, raised the alert before it became an incident, and opened CORE-4419 to refactor DB initialization for selective connections.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">On-call</span>
+                <span class="update-tag">Channel Analytics</span>
+                <span class="update-tag">Incident Response</span>
+                <span class="update-tag">Infrastructure</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 10, 2026</span>
+              </div>
+              <h3 class="update-title">Insights nearing the finish line</h3>
+              <p class="update-content">
+                A week of focus and depth — the single-page Insights view is almost done, the trends analysis is in development, and I had a chance to reflect on how the tech lead role has evolved since the start of the year.
+              </p>
+              <p class="update-content">
+                📈 Insights progress — the single channel post performance page is nearly ready (just the feedback UI left), trend analysis in development, and the old channels page close to done. Starting to see the finish line.
+              </p>
+              <p class="update-content">
+                🤖 AI-assisted development — I've been acting as a tech lead managing a set of AI junior developers (Claude Code), completing tasks 10x faster but dealing with much higher context switching. Interesting new way to work.
+              </p>
+              <p class="update-content">
+                🎙️ Technical interview — conducted a backend engineering interview. Strong candidate technically, but I leaned "no" — their philosophy on AI tools didn't fit with how Buffer's engineering team experiments and ships.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">Leadership</span>
+                <span class="update-tag">Hiring</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 9, 2026</span>
+              </div>
+              <h3 class="update-title">Crystallizing the Insights roadmap</h3>
+              <p class="update-content">
+                A strategy-heavy week — spent time turning months of exploration into a clear four-track roadmap for Insights, and went deep on benchmarks architecture with the data team.
+              </p>
+              <p class="update-content">
+                🗺️ Insights roadmap — structured the initiative into four parallel workstreams: Ingestion Pipeline, Single Channel Post Performance, All Channels Overview, and Engagement Creator Score. Clarity feels good after months of building in parallel.
+              </p>
+              <p class="update-content">
+                📊 Benchmarks deep dive — met with Julian, Brandon, and Eduardo on using native MongoDB aggregations for percentile models. A monthly cadence with 2+ years of backfill data is on the table. Exciting potential for showing customers how they compare to peers.
+              </p>
+              <p class="update-content">
+                🎉 Company milestone — Buffer hit $2M MRR and $24M ARR. Early Insights data is showing a 14% lift in new users creating their first post within a week. That number makes all the pipeline work feel worth it.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">Strategy</span>
+                <span class="update-tag">Analytics</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 8, 2026</span>
+              </div>
+              <h3 class="update-title">Customer feedback, adaptive scheduling architecture</h3>
+              <p class="update-content">
+                A week of thinking more than coding — customer office hours, an external advisory session, and deep architecture discussions shaped the next phase of the Insights infrastructure.
+              </p>
+              <p class="update-content">
+                💬 Customer office hours — ran a session demoing the Insights "Trends" AI prototype. Feedback was positive overall, though we caught some tone issues in the AI-generated copy ("Despite" as a framing word came across as harsh). Small details matter.
+              </p>
+              <p class="update-content">
+                🏗️ Adaptive scheduling — solidified a hot/warm/cold channel priority model for how we schedule analytics ingestion, inspired by healthcare appointment triage systems. Debated MongoDB vs SQS as the backing store with Dinos and Eduardo.
+              </p>
+              <p class="update-content">
+                🔍 HighCharts audit — confirmed our license expired back in 2014. Renewal is $829/seat/year. Time to evaluate alternatives.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">Architecture</span>
+                <span class="update-tag">Customer Feedback</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 7, 2026</span>
+              </div>
+              <h3 class="update-title">Onboarding Bruno and deploying 8 channel workers to production</h3>
+              <p class="update-content">
+                Two big wins this week: Bruno's first day went smoothly despite a Helm v4 breaking change, and we finished deploying channel analytics workers for all eight supported platforms.
+              </p>
+              <p class="update-content">
+                👋 Bruno joins the team — gave him a full infrastructure overview: Hermes, Orbstack, AWS CLI, Rush monorepo. Hit a snag with a Helm v4 breaking change during setup — downgraded to v3 and kept moving.
+              </p>
+              <p class="update-content">
+                🚀 Eight workers deployed — Facebook, Instagram, Twitter, LinkedIn, Bluesky, TikTok, Mastodon, and YouTube analytics workers are now running in production. Scaled Facebook workers from 3 → 40 to clear the message backlog.
+              </p>
+              <p class="update-content">
+                🤖 Feature flag automation — built a GitHub Actions workflow that scans for 100%-released flags older than two months and auto-marks them for removal. One less thing to do manually.
+              </p>
+              <p class="update-content">
+                📐 Facebook analytics enhancement — added multi-metric support with month-boundary chunking so we handle the API's date range limits gracefully.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Onboarding</span>
+                <span class="update-tag">Channel Analytics</span>
+                <span class="update-tag">Infrastructure</span>
+                <span class="update-tag">Automation</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 6, 2026</span>
+              </div>
+              <h3 class="update-title">SNS infrastructure, channel analytics in production</h3>
+              <p class="update-content">
+                A week of heavy infrastructure work — SNS event routing live, channel analytics pipelines rolling out to production, and an expanded tech lead scope after some team changes.
+              </p>
+              <p class="update-content">
+                📡 SNS event subscriptions — shipped automatic routing of channel events to backfill queues. This unlocks a cleaner architecture for keeping analytics data fresh without manual triggers.
+              </p>
+              <p class="update-content">
+                🚢 Pinterest deployment complete — finished deploying Pinterest workers and opened the channel analytics backfill mutation UI PR. The rollout is scoped to visual refresh users first, starting with Facebook, Instagram, and LinkedIn.
+              </p>
+              <p class="update-content">
+                📋 Expanded responsibilities — took on broader Insights project ownership after a team departure, including mentoring Bruno through onboarding. More context switching, but good visibility into the full picture.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Infrastructure</span>
+                <span class="update-tag">Channel Analytics</span>
+                <span class="update-tag">Leadership</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 5, 2026</span>
+              </div>
+              <h3 class="update-title">Seven ingestion pipelines shipped and covering for a teammate</h3>
+              <p class="update-content">
+                The most prolific shipping week of the year so far — built ingestion pipelines for all seven social networks, handled an incident, and covered on-call for a teammate going through a tough time.
+              </p>
+              <p class="update-content">
+                🏭 All seven pipelines shipped — Twitter, Facebook, Pinterest, LinkedIn, YouTube, Mastodon, and TikTok follower count ingestion pipelines are done. Four shipped in a single day on Tuesday, the remaining three by Thursday. Every network now has a pipeline.
+              </p>
+              <p class="update-content">
+                🛠️ LocalStack SQS Dashboard — built a dev tooling improvement in Hermes that makes it much easier to inspect SQS queues locally. Small investment, big quality-of-life improvement for the team.
+              </p>
+              <p class="update-content">
+                🚨 Incident response — Start Pages went down due to a build issue. Coordinated an ArgoCD rollback and got things stable quickly.
+              </p>
+              <p class="update-content">
+                🤝 Covered on-call for Rathes while he dealt with a family situation. That's what teammates are for.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Channel Analytics</span>
+                <span class="update-tag">Infrastructure</span>
+                <span class="update-tag">Incident Response</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 4, 2026</span>
+              </div>
+              <h3 class="update-title">Pivoting to GraphQL and kicking off Insights</h3>
+              <p class="update-content">
+                A pivotal week — we made a significant architectural decision for Post Insights, launched the initiative cross-functionally, and I found an unexpected outlet for AI tooling at our Hack Day.
+              </p>
+              <p class="update-content">
+                🔄 GraphQL pivot — moved away from Analyze RPC toward GraphQL backed by existing Publish data. This unlocks analytics support for all channels including the free plan. Built and shared the first Post Insights Summary prototype wired via GraphQL.
+              </p>
+              <p class="update-content">
+                🚀 Insights initiative kickoff — cross-functional meeting with Brandon, Sofia, Simon, Kateryna, Adam, and Hailley. Aligned on a three-tier analytics strategy and set the Q2 deprecation timeline for legacy Analyze.
+              </p>
+              <p class="update-content">
+                🤖 AI Hack Day — built a feature flag cleanse tool using Claude Code that scans for fully-released flags and opens removal PRs automatically. Shipped 12+ PRs in one day. Great example of what's possible when you pair AI tools with deep codebase knowledge.
+              </p>
+              <p class="update-content">
+                🚨 Incident — analytics collectors crashed due to an assertCanAccessChannels regression. Identified, reverted, and resolved same day.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Insights</span>
+                <span class="update-tag">GraphQL</span>
+                <span class="update-tag">AI Tools</span>
+                <span class="update-tag">Incident Response</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 3, 2026</span>
+              </div>
+              <h3 class="update-title">Building the analytics module and rolling out Instagram scopes</h3>
+              <p class="update-content">
+                A week of infrastructure investment — created the shared analytics module that will power all future analytics work, while rolling out the Instagram Login analytics scope to 100% of users.
+              </p>
+              <p class="update-content">
+                📦 New analytics module — created <code>domains/analytics-modules</code> in our Rush monorepo as the shared home for analytics code. Built the package from scratch (+627 lines) and refactored Analyze to use it immediately (-310 lines of duplication removed).
+              </p>
+              <p class="update-content">
+                📱 Instagram scope rollout — rolled out the <code>instagram_business_manage_insights</code> scope from 25% → 100% over the course of the week. Also added follows metric ingestion and removed freemium limitations on post metrics across all services.
+              </p>
+              <p class="update-content">
+                🐛 Schedule bug fix — fixed an issue where posting schedules couldn't be copied between X and Threads due to unnecessary authorization checks blocking the operation.
+              </p>
+              <p class="update-content">
+                📰 Changelog API — exposed changelog entries on the free-tools-api, giving us a public endpoint for surfacing product updates.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Analytics</span>
+                <span class="update-tag">Instagram</span>
+                <span class="update-tag">Infrastructure</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 2, 2026</span>
+              </div>
+              <h3 class="update-title">Instagram analytics deep-dive and incident response</h3>
+              <p class="update-content">
+                A week split between exciting discovery work on Instagram analytics and an unexpected incident that needed quick resolution.
+              </p>
+              <p class="update-content">
+                📊 Instagram Login insights — tested the IG Login Insights endpoint via Graph Explorer and confirmed metrics parity with Facebook Login. Recorded a walkthrough video and aligned with Brandon on scope. The data is there — now it's about building the pipeline.
+              </p>
+              <p class="update-content">
+                🚨 Incident INC-313 — Analyze disappeared from the navigation for paid customers. Traced it to a premature feature flag removal. Reverted, stabilized, and documented the root cause. A good reminder that feature flag removals need careful sequencing.
+              </p>
+              <p class="update-content">
+                👋 New team member — Bruno joined as my role buddy on the Core UX team. Good to have someone to think through problems with.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">Instagram Analytics</span>
+                <span class="update-tag">Incident Response</span>
+                <span class="update-tag">Team</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
+                <span class="update-date">Week 1, 2026</span>
+              </div>
+              <h3 class="update-title">Strong start — GA release and analytics pipeline kickoff</h3>
+              <p class="update-content">
+                First week of the year and we came out swinging. A major GA release, security fixes, and the kickoff of what will become the channel analytics initiative.
+              </p>
+              <p class="update-content">
+                🎉 Post Details goes GA — renamed from "View Post," removed the Alpha badge, and released to all customers. Merged 7 PRs on day one covering the release, security fixes, and UX polish. Felt great to start the year by getting something out the door.
+              </p>
+              <p class="update-content">
+                🔒 Security — fixed S3 bucket validation for avatar uploads to prevent potential misuse. The kind of fix that's small in code but meaningful in impact.
+              </p>
+              <p class="update-content">
+                📡 Analytics pipeline kickoff — met with Brandon, Dinos, and Amanda to plan the Instagram Login API integration. Early technical constraints mapped out: the API gives us likes and comments, but not reach or engagement directly. Good to know early.
+              </p>
+              <p class="update-content">
+                Six Linear issues completed, 7 PRs merged. A good start.
+              </p>
+              <div class="update-tags">
+                <span class="update-tag">GA Release</span>
+                <span class="update-tag">Security</span>
+                <span class="update-tag">Analytics</span>
+              </div>
+            </article>
+
+            <article class="update-card">
+              <div class="update-header">
                 <span class="update-date">Week 50, 2025</span>
               </div>
               <h3 class="update-title">Clearing the decks before CX Week</h3>
